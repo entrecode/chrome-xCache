@@ -1,0 +1,20 @@
+{
+  "description": "A simple Google Chrome extension that shows if a page being served via cloudfront or not. Also works with similar caches that use the x-cache header.",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "img/cloudfront.png"
+  },
+  "manifest_version": 2,
+  "name": "Cloudfront Indicator (x-cache)",
+  "permissions": [
+    "webRequest",
+    "webNavigation",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "version": "1.0.0"
+}
